@@ -1,0 +1,40 @@
+<form [formGroup]="loginForm" (ngSubmit)="submit($event)">
+    <div class="form__container">
+        <div class="form__title">Войдите</div>
+        <div class="form__input-container">
+            <label for="name">Username или почта</label>
+            <input id="name" class="form__input" type="text" [(ngModel)]="textInput" formControlName="login"
+                autocomplete="off">
+            <img class="form__icon form__icon-mail" src="assets/pages/login/login-form/mail.svg" />
+        </div>
+        <div class="form__input-container">
+            <label for="password">Пароль</label>
+            <input id="password" class="form__input form__password" [type]="isShowPassword ? 'text' : 'password'"
+                formControlName="password" autocomplete="off">
+            <img class="form__icon form__icon-lock" src="assets/pages/login/login-form/lock.svg" />
+            <img *ngIf="isShowPassword; else password" (click)="toggleIsShowPassword()"
+                class="form__icon form__icon-eye" src="assets/pages/login/login-form/eye-opened.svg" />
+            <ng-template #password>
+                <img (click)="toggleIsShowPassword()" class="form__icon form__icon-eye"
+                    src="assets/pages/login/login-form/eye-closed.svg" />
+            </ng-template>
+        </div>
+        <div class="form__additional">
+            <div>
+                <input id="remember" class="form__remember" type="checkbox" formControlName="remember">
+                <label for="remember">Запомнить меня</label>
+            </div>
+            <a>Забыли пароль?</a>
+        </div>
+        <div class="form__create">Создать аккаунт</div>
+        <div class="form__bottom">
+            <button [ngClass]="{'form__login--disabled': !loginForm.valid }" type="submit" class="form__login"
+                [disabled]="!loginForm.valid">Войти</button>
+            <div class="form__icons-container">
+                <a class="form__social" *ngFor="let social of socialLinks">
+                    <img [src]="social.iconUrl" [alt]="social.hint" (onclick)="social.onClick()">
+                </a>
+            </div>
+        </div>
+    </div>
+</form>

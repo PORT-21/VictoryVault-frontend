@@ -1,0 +1,18 @@
+:root {
+    /* --zn-font-family-base: Inter, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
+  
+    --font-base: 400 16px/24px var(--zn-font-family-base);
+    --font-small: 400 14px/20px var(--zn-font-family-base);
+    --font-large: 400 24px/32px var(--zn-font-family-base);
+    --font-menu: 400 14px/20px var(--zn-font-family-base);
+    --font-burger-link: 400 28px/36px var(--zn-font-family-base);
+    --font-title: 700 30px/36px var(--zn-font-family-base); */
+
+    --pt-color-white: #F3F2ED;
+    --pt-color-green: #51564F;
+    --pt-color-green-primary: #44E283;
+    --pt-color-background: #333C39;
+    --pt-color-dark: #212526;
+}
