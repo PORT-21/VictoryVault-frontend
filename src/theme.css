@@ -16,11 +16,29 @@
     --pt-font-burger-link: 400 28px/36px var(--pt-font-family-base);
     --pt-font-title: 800 36px/52px var(--pt-font-family-title);
 
-    --pt-color-white: #F3F2ED;
-    --pt-color-green: #51564F;
-    --pt-color-green-primary: #44E283;
-    --pt-color-background: #333C39;
-    --pt-color-dark: #212526;
+    --pt-padding-x-container-s: 56px;
+    --pt-padding-x-container-m: 153px;
+    --pt-padding-x-container-l: 314px;
+    --pt-padding-x-container-lg: 20vw;
+
+    --pt-color-gray: #DCE4EE;
+    --pt-color-black: #181A1C;
+    --pt-color-orange: #F9A424;
+    --pt-color-white: #FFFFFF;
 
     --pt-transition: all .2s ease-in;
+}
+
+h1,h2,h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  h1,h2,h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
 }

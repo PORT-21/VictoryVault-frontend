@@ -1,0 +1,71 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url('/assets/pages/main/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    height: 100%;
+    padding:  24px;
+    top: -120px;
+    z-index: -1;
+    margin-bottom: 28px;
+  }
+
+  
+@media (min-width: 600px) {
+    :host {
+        padding: 240px 56px 0 56px;
+    }
+}
+
+@media (min-width: 1100px) {
+    :host {
+        padding: 240px var(--pt-padding-x-container-m) 0 var(--pt-padding-x-container-m);
+    }
+}
+
+@media (min-width: 1600px) {
+    :host {
+        padding: 240px var(--pt-padding-x-container-l) 0 var(--pt-padding-x-container-l);
+    }
+}
+
+@media (min-width: 2200px) {
+    :host {
+        padding: 240px var(--pt-padding-x-container-lg) 0 var(--pt-padding-x-container-lg);
+    }
+}
+
+@media (max-width: 800px) {
+    :host {
+        padding-top: 120px;
+        top: 0;
+        z-index: 0;
+    }
+}
+
+h1,h2,h3 {
+    color: white;
+}
+
+.create {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__bottom-title {
+        text-align: right;
+        align-self: flex-end;
+    }
+    &__img {
+        max-width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+}
+

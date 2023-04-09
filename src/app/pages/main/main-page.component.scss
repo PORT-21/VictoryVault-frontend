@@ -1,0 +1,14 @@
+:host {
+    font-family: 'Vela Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+@media (max-width: 600px) {
+    :host {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

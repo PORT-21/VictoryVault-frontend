@@ -1,0 +1,104 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 24px;
+    margin-bottom: 128px;
+  }
+
+  
+@media (min-width: 600px) {
+    :host {
+        padding: 120px 56px 0 56px;
+    }
+}
+
+@media (min-width: 1100px) {
+    :host {
+        padding: 120px var(--pt-padding-x-container-m) 0 var(--pt-padding-x-container-m);
+    }
+}
+
+@media (min-width: 1600px) {
+    :host {
+        padding: 120px var(--pt-padding-x-container-l) 0 var(--pt-padding-x-container-l);
+    }
+}
+
+@media (min-width: 2200px) {
+    :host {
+        padding: 120px var(--pt-padding-x-container-lg) 0 var(--pt-padding-x-container-lg);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 51px;
+}
+
+.tarifs {
+    &__blocks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 28px;
+        margin-bottom: 110px;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            margin-bottom: 28px;
+        }
+    }
+    &__block {
+        border-radius: 15px;
+        background: var(--pt-color-black);
+        color: var(--pt-color-white);
+        padding: 80px 100px 80px 80px;
+
+        &-gray {
+            background: var(--pt-color-gray);
+            color: var(--pt-color-black);    
+        }
+    }
+    &__block-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        background: var(--pt-color-orange);
+        color: var(--pt-color-black);
+        padding: 70px 45px;
+        gap: 18px;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8px 80px;
+        border-radius: 10px;
+        background: var(--pt-color-black);
+        color: var(--pt-color-white);
+        height: 100%;
+        cursor: pointer;
+        transition: var(--pt-transition);
+
+        &:hover {
+            background: var(--pt-color-white);
+            color: var(--pt-color-black);
+        }
+    }
+    &__text-bottom {
+        max-width: 500px;
+    }
+}
+
+li {
+    list-style: disc;
+}
