@@ -1,13 +1,77 @@
 :host {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: var(--pt-color-dark);
-    background-image: url('../../../assets/pages/login/background.svg');
+    background: var(--pt-color-gray);
     background-position-x: right;
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
+    @media(max-width: 800px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+    overflow-y: auto;
+    @media (max-width: 800px) {
+        width: 100vw;
+    }
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../../assets/pages/login/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 100vh;
+    @media(max-width: 800px) {
+        width: 100vw;
+        height: 20vh;
+    }
+}
+
+.black-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 131px;
+    background-color: var(--pt-color-black);
+    opacity: 1;
+    backdrop-filter: invert(80%);
+}
+
+.text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    font-size: calc( (100vw - 480px)/(2560 - 480) * (86 - 16) + 16px);
+    line-height: 107px;
+    color: var(--pt-color-white);
+    user-select: none;
+
+    @media(max-width: 800px) {
+        font-size: 40px;
+    }
+}
+
+.copyright {
+    position: absolute;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    left: 20px;
+    bottom: 20px;
+    opacity: .5;
 }
