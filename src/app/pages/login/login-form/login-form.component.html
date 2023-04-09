@@ -1,5 +1,4 @@
-<form [formGroup]="loginForm" (ngSubmit)="submit($event)">
-    <div class="form__container">
+<form [formGroup]="loginForm" class="form__container" (ngSubmit)="submit($event)">
         <div class="form__title">Войдите</div>
         <div class="form__input-container">
             <label for="name">Username или почта</label>
@@ -36,5 +35,4 @@
                 </a>
             </div>
         </div>
-    </div>
 </form>
