@@ -1,0 +1,55 @@
+#picture-holder {
+    display: inline-block;
+    width: 154px;
+    height: 172px;
+    background-color: #181A1C;
+    border: 1px solid #C3C3C3 !important;
+    border-top-left-radius: 18.5px;
+    border-bottom-left-radius: 18.5px;
+}
+
+#text-holder {
+    display: inline-block;
+    width: 154px;
+    height: 172px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE4EE !important;
+    border-top-right-radius: 18.5px;
+    border-bottom-right-radius: 18.5px;
+    word-wrap: break-word;
+    padding: 8px;
+
+    #title {
+        margin-bottom: 2px;
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18.4076px;
+        line-height: 24px;
+    }
+
+    #description {
+        width: 100%;
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+
+    td {
+        overflow: hidden;
+    }
+}
+
+#img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

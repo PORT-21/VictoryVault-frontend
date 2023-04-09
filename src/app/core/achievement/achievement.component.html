@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <td id="picture-holder">
+            <img *ngIf="src" [src]="src" id="img"/>
+        </td>
+        <td id="text-holder">
+            <span id="title">{{title ?? '\<Название\>'}}</span>
+            <br>
+            <span id="description">{{description ?? '\<Описание\>'}}</span>
+        </td>
+    </tr>
+</table>
