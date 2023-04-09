@@ -1,0 +1,19 @@
+<div id="preview">
+    <div (click)="back()">Exit</div>
+    <achievement [description]="description" [title]="title" [src]="imgSrc" />
+</div>
+<div id="setting">
+    <span class="section">Название</span>
+    <input class="input" (keyup)="processTitle($event)">
+    <span class="section">Описание</span>
+    <input class="input" (keyup)="processDescription($event)">
+    <input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+    <div class="file-upload">
+        <button class="upload-btn" (click)="fileUpload.click()">
+        {{fileName ?? "Choose file"}}
+        </button>
+    </div>
+    <button (click)="save()">
+        Save
+    </button>
+</div>

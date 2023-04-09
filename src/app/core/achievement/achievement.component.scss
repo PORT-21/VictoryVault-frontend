@@ -3,6 +3,7 @@
     width: 154px;
     height: 172px;
     background-color: #181A1C;
+    border: 1px solid #C3C3C3 !important;
     border-top-left-radius: 18.5px;
     border-bottom-left-radius: 18.5px;
 }
@@ -45,4 +46,10 @@ table {
     td {
         overflow: hidden;
     }
+}
+
+#img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }

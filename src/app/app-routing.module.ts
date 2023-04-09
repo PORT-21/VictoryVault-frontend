@@ -14,12 +14,12 @@ const routes: Routes = [
       import('./pages/login/login.module').then((m) => m.LoginModule),
   },
   {
-    path: 'achievements',
+    path: 'create',
     loadChildren: () =>
       import('./pages/create/create.module').then((m) => m.CreatePageModule),
   },
   {
-    path: 'create',
+    path: 'achievements',
     loadChildren: () =>
       import('./pages/achievement/achievement.module').then((m) => m.AchievementPageModule),
   },

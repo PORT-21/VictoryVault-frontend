@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
 export class AchievementComponent {
     @Input() title?: string;
     @Input() description?: string;
-    // @Input() description?: string;
+    @Input() src?: string;
 }
